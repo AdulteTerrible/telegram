@@ -3,7 +3,7 @@ Telegram for OSX
 
 [Telegram](http://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
 
-This repo contains official [Telegram Messenger](https://telegram.org/dl/osx) source code.
+This repo is a fork of the official [Telegram Messenger](https://telegram.org/dl/osx) source code.
 
 ### API, Protocol documentation
 
@@ -15,8 +15,10 @@ Documentation for MTproto protocol is available here: http://core.telegram.org/m
 
 
 
-1. Checkout repository
-2. Switch MtProtoKit submodule to 'unstable' branch
+1. Checkout repository:
+   - add this repository to XCode,
+   - Version Control > Check Out...
+2. Switch MtProtoKit submodule to 'unstable' branch (XCode: Version Control > MtProtoKit(...) > Switch to Branch...)
 3. Create 'Application.h' file with this content:
 
 ```c
@@ -31,5 +33,6 @@ Documentation for MTproto protocol is available here: http://core.telegram.org/m
 #define BUNDLE_IDENTIFIER @"ru.keepcoder.Telegram"  // bundle name
 #endif
 ```
+4. Register your app at my.telegram.org and change the values of Application.h accordingly.
 
-Code avaiable on GPLV2 license
+Code available on GPLV2 license
